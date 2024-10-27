@@ -42,4 +42,27 @@ public class JavaArrayBox<E> implements Box<E> {
         size++;
         return true;
     }
+
+    @Override
+    public boolean add(int index, E element) {
+        if (index < 0 || index > size) {
+            throw new IndexOutOfBoundsException("Данный индекс не корректен: " + index);
+        } else if (size == array.length) {
+            grow();
+        }
+        Object[] newArray = new Object[size - index];
+        for (int i = 0; i < newArray.length; i++) {
+            newArray[i] = array[index + i];
+        }
+        for (int i = 0, j = 0; i < array.length; i++) {
+            if (i == index) {
+                array[i] = element;
+            } else if (i > index) {
+                array[i] = newArray[j];
+                j++;
+            }
+        }
+        size++;
+        return true;
+    }
 }
