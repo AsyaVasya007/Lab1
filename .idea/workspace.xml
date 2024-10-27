@@ -4,14 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fce018d6-1985-4720-bb09-a523d29077b3" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/JavaArrayBox.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/main/Box.java" afterDir="false" />
+    <list default="true" id="fce018d6-1985-4720-bb09-a523d29077b3" name="Changes" comment="4th commit: methods get(int index), remove(int index), set(int index, E element), toArray(), toString()">
+      <change afterPath="$PROJECT_DIR$/src/test/java/test/Main1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/test/Main2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/main/JavaArrayBox.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/main/JavaArrayBox.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,9 +25,9 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 5
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 5
+}</component>
   <component name="ProjectId" id="2o1oGyNZeSxjAlu3GW1lblgHNN9" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -40,10 +36,11 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Application.Main2.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
-    "last_directory_selection": "C:/Users/Анастасия/IdeaProjects/Lab1/src/main/java"
+    "last_directory_selection": "C:/Users/Анастасия/IdeaProjects/Lab1/src/test/java"
   }
 }]]></component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -55,6 +52,57 @@
       <option name="presentableId" value="Default" />
       <updated>1730046351805</updated>
     </task>
+    <task id="LOCAL-00001" summary="1st commit: initialization">
+      <option name="closed" value="true" />
+      <created>1730046703255</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1730046703255</updated>
+    </task>
+    <task id="LOCAL-00002" summary="2nd commit: methods add, size, grow and constructors">
+      <option name="closed" value="true" />
+      <created>1730046895042</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1730046895042</updated>
+    </task>
+    <task id="LOCAL-00003" summary="3d commit: methods add(int index, E element)">
+      <option name="closed" value="true" />
+      <created>1730046996504</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1730046996504</updated>
+    </task>
+    <task id="LOCAL-00004" summary="4th commit: methods get(int index), remove(int index), set(int index, E element), toArray(), toString()">
+      <option name="closed" value="true" />
+      <created>1730047102429</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1730047102429</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="1st commit: initialization" />
+    <MESSAGE value="2nd commit: methods add, size, grow and constructors" />
+    <MESSAGE value="3d commit: methods add(int index, E element)" />
+    <MESSAGE value="4th commit: methods get(int index), remove(int index), set(int index, E element), toArray(), toString()" />
+    <option name="LAST_COMMIT_MESSAGE" value="4th commit: methods get(int index), remove(int index), set(int index, E element), toArray(), toString()" />
   </component>
 </project>
