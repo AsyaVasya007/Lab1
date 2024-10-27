@@ -65,4 +65,49 @@ public class JavaArrayBox<E> implements Box<E> {
         size++;
         return true;
     }
+
+    @Override
+    public E get(int index) {
+        if (index < 0 || index >= size) {
+            throw new IndexOutOfBoundsException("Данный индекс не корректен: " + index);
+        } else {
+            return (E) array[index];
+        }
+    }
+
+    @Override
+    public boolean remove(int index) {
+        if (index < 0 || index >= size) {
+            throw new IndexOutOfBoundsException("Данный индекс не корректен: " + index);
+        }
+        for (int i = index; i < size - 1; i++) {
+            array[i] = array[i + 1];
+        }
+        array[size - 1] = null;
+        size--;
+        return true;
+    }
+
+    @Override
+    public E set(int index, E element) {
+        if (index < 0 || index >= size) {
+            throw new IndexOutOfBoundsException("Данный индекс не корректен: " + index);
+        }
+        array[index] = element;
+        return (E) array[index];
+    }
+
+    @Override
+    public E[] toArray() {
+        E[] resultArray = (E[]) new Object[size];
+        for (int i = 0; i < size; i++) {
+            resultArray[i] = (E) array[i];
+        }
+        return resultArray;
+    }
+
+    @Override
+    public String toString(){
+        return Arrays.toString(toArray());
+    }
 }
