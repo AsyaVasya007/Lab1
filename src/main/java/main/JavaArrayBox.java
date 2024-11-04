@@ -26,7 +26,7 @@ public class JavaArrayBox<E> implements Box<E> {
      */
     public JavaArrayBox(int capacity) {
         if (capacity < 0) {
-            throw new IllegalArgumentException("Данный индекс не корректен: " + capacity);
+            throw new IllegalArgumentException("Данный индекс некорректен: " + capacity);
         } else {
             this.array = new Object[capacity];
         }
@@ -80,7 +80,7 @@ public class JavaArrayBox<E> implements Box<E> {
     @Override
     public boolean add(int index, E element) {
         if (index < 0 || index > size) {
-            throw new IndexOutOfBoundsException("Данный индекс не корректен: " + index);
+            throw new IndexOutOfBoundsException("Данный индекс некорректен: " + index);
         } else if (size == array.length) {
             grow();
         }
@@ -110,7 +110,7 @@ public class JavaArrayBox<E> implements Box<E> {
     @Override
     public E get(int index) {
         if (index < 0 || index >= size) {
-            throw new IndexOutOfBoundsException("Данный индекс не корректен: " + index);
+            throw new IndexOutOfBoundsException("Данный индекс некорректен: " + index);
         } else {
             return (E) array[index];
         }
@@ -126,7 +126,7 @@ public class JavaArrayBox<E> implements Box<E> {
     @Override
     public boolean remove(int index) {
         if (index < 0 || index >= size) {
-            throw new IndexOutOfBoundsException("Данный индекс не корректен: " + index);
+            throw new IndexOutOfBoundsException("Данный индекс некорректен: " + index);
         }
         for (int i = index; i < size - 1; i++) {
             array[i] = array[i + 1];
@@ -147,7 +147,7 @@ public class JavaArrayBox<E> implements Box<E> {
     @Override
     public E set(int index, E element) {
         if (index < 0 || index >= size) {
-            throw new IndexOutOfBoundsException("Данный индекс не корректен: " + index);
+            throw new IndexOutOfBoundsException("Данный индекс некорректен: " + index);
         }
         array[index] = element;
         return (E) array[index];

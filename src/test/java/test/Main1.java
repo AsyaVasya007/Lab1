@@ -13,6 +13,7 @@ public class Main1 {
         integers1.add(12);
         integers1.add(12);
         integers1.add(18);
+        integers1.add(2,1);
         integers1.add(8);
         integers.add(1);
         integers.add(10);
@@ -21,6 +22,14 @@ public class Main1 {
         int s1 = integers1.size();
         System.out.println("Size of first container = " + s);
         System.out.println("Size of second container = " + s1);
+        int r = integers.get(2);
+        int r1 = integers.get(0);
+        System.out.println("Element with index (2) = " + r);
+        System.out.println("Element with index (0) = " + r1);
+        String newContainer = integers.toString();
+        String newContainer1 = integers1.toString();
+        System.out.println("First container after changes: " + newContainer);
+        System.out.println("Second container after changes: " + newContainer1);
     }
 
 }
